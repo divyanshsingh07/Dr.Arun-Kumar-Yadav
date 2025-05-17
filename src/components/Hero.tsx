@@ -95,7 +95,7 @@ const Hero = () => {
             <div className="border-t border-gray-300 dark:border-gray-700 mb-5" />
 
             {/* Professional Summary */}
-            <h4 className="text-lg sm:text-xl ipad:text-2xl font-semibold text-gray-800 dark:text-white mb-2">Professional Summary</h4>
+            
             <p className="text-sm sm:text-base ipad:text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
               I am currently serving as an <strong>Assistant Professor</strong> at <strong>VIT-AP University</strong> since <strong>May 2022</strong>, previously teaching at <strong>Manipal University Jaipur</strong> and <strong>Chandigarh University Mohali</strong>. I am a <strong>disciplined and collaborative academic</strong> with a passion for both teaching and research.
               <br /><br />
@@ -112,7 +112,9 @@ const Hero = () => {
             </p>
 
             {/* Awards and Scholarships */}
-            <h4 className="text-lg sm:text-xl ipad:text-2xl font-semibold text-gray-800 dark:text-white mb-2">Awards & Scholarships</h4>
+            <h4 className="text-lg sm:text-xl ipad:text-2xl font-semibold text-gray-800 dark:text-white mb-2 underline decoration-1 underline-offset-2">
+  Awards & Scholarships
+</h4>
             <ul className="space-y-3 mb-6">
               {awards.map((award, index) => (
                 <li key={index} className="flex items-start gap-3 text-sm sm:text-base ipad:text-lg text-gray-700 dark:text-gray-300">
