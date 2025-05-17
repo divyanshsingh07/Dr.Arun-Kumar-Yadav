@@ -12,11 +12,7 @@ const Footer = () => {
       icon: <GraduationCap className="w-5 h-5" />,
       href: 'https://scholar.google.com/citations?user=VtlkNG8AAAAJ&hl=en',
     },
-    {
-      name: 'Email',
-      icon: <Mail className="w-5 h-5" />,
-      href: 'mailto:arunkumardv367@gmail.com',
-    },
+   
   ];
 
   const contactInfo = [
@@ -76,7 +72,7 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="space-y-9 text-center w-full">
+          <div className="space-y-8 text-center w-full">
             <h3 className="text-white text-xl font-semibold">Connect With Me</h3>
             <div className="flex justify-center space-x-8">
               {socialLinks.map((link) => (

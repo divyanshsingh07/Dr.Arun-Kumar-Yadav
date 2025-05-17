@@ -2,7 +2,8 @@ import {Quote, Award, ExternalLink,Building2,  Calendar, MapPin, School, } from 
 import chaso from '../assets/chaso.png';
 import journal from '../assets/journal.png';
 import stationKeeping from '../assets/Station-keeping.png';
-import crtbp from '../assets/CRTBP.png';
+import crtbp from '../assets/chaso.png';
+import api from '../assets/api.png';
 
 const Publications = () => {
   const publications = [
@@ -49,7 +50,7 @@ const Publications = () => {
       citations: 0,
       link: "https://pubs.aip.org/aip/acp/article-abstract/2435/1/020052/2823017/Controlling-the-libration-motion-of-tethered",
       description: "Implementation of sliding mode control for tethered satellite systems, focusing on libration motion stabilization.",
-      image: crtbp
+      image: api
     }
   ];
 
@@ -109,7 +110,7 @@ const Publications = () => {
               className="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group"
             >
               {/* Publication Image */}
-              <div className="h-48 overflow-hidden">
+              <div className="h-50 overflow-hidden">
                 <img 
                   src={pub.image} 
                   alt={pub.title}
