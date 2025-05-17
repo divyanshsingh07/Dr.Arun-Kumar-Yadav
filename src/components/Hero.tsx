@@ -46,14 +46,42 @@ const Hero = () => {
     <section id="home" className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8 flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 ipad:grid-cols-2 gap-8 items-center">
-          {/* Left Column - Photo */}
-          <div className="flex justify-center ipad:justify-start">
+          {/* Left Column - Photo and Social Links */}
+          <div className="flex flex-col items-center ipad:items-start">
             <div className="w-[280px] sm:w-[320px] ipad:w-[360px] lg:w-[400px] h-[350px] sm:h-[400px] ipad:h-[450px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg mx-auto ipad:mx-0 ipad:ml-8 lg:ml-20">
               <img
                 src="https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Arun_Kumar_Yadav_SAS_0882_cc6feb0927.avif"
                 alt="Dr. Arun Yadav"
                 className="w-full h-full object-cover"
               />
+            </div>
+            {/* Social Links and CV Download */}
+            <div className="flex flex-col items-center gap-4 mt-6 mx-48">
+              <div className="flex space-x-4">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
+                    title={link.name}
+                  >
+                    <div className="p-1">
+                      {link.icon}
+                    </div>
+                    <span className="text-xs opacity-0 group-hover:opacity-100 transition-opacity">{link.name}</span>
+                  </a>
+                ))}
+              </div>
+              <a
+                href="/Resume.pdf"
+                download="Dr_Arun_Yadav_Resume.pdf"
+                className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-base ipad:text-lg"
+              >
+                <Download className="w-5 h-5" />
+                <span>Download CV</span>
+              </a>
             </div>
           </div>
 
@@ -99,35 +127,6 @@ const Hero = () => {
                 </li>
               ))}
             </ul>
-
-            {/* Social Links and CV Download */}
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <div className="flex space-x-">
-                {socialLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
-                    title={link.name}
-                  >
-                    <div className="p-1">
-                      {link.icon}
-                    </div>
-                    <span className="text-xs opacity-0 group-hover:opacity-100 transition-opacity">{link.name}</span>
-                  </a>
-                ))}
-              </div>
-              <a
-                href="/Resume.pdf"
-                download="Dr_Arun_Yadav_Resume.pdf"
-                className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-base ipad:text-lg"
-              >
-                <Download className="w-5 h-5" />
-                <span>Download CV</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
