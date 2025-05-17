@@ -102,17 +102,20 @@ const Hero = () => {
 
             {/* Social Links and CV Download */}
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <div className="flex space-x-4">
+              <div className="flex space-x-">
                 {socialLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    className="flex flex-col items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
                     title={link.name}
                   >
-                    {link.icon}
+                    <div className="p-1">
+                      {link.icon}
+                    </div>
+                    <span className="text-xs opacity-0 group-hover:opacity-100 transition-opacity">{link.name}</span>
                   </a>
                 ))}
               </div>
