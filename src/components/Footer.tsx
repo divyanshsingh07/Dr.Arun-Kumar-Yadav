@@ -12,7 +12,6 @@ const Footer = () => {
       icon: <GraduationCap className="w-5 h-5" />,
       href: 'https://scholar.google.com/citations?user=VtlkNG8AAAAJ&hl=en',
     },
-    
     {
       name: 'Email',
       icon: <Mail className="w-5 h-5" />,
@@ -25,9 +24,9 @@ const Footer = () => {
       icon: <MapPin className="w-5 h-5" />,
       text: 'CB-204-B, VIT-AP University, Andhra Pradesh, India',
     },
-   
     {
       icon: <Mail className="w-5 h-5" />,
+      href: 'mailto:arunkumardv367@gmail.com',
       text: 'arunkumardv367@gmail.com',
     },
   ];
@@ -50,62 +49,49 @@ const Footer = () => {
         <ArrowUp className="w-5 h-5" />
       </button>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-items-center">
           {/* Contact Information */}
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contact Information</h3>
-            <ul className="space-y-3">
+          <div className="space-y-9 text-center w-full">
+            <h3 className="text-white text-xl font-semibold">Contact Information</h3>
+            <ul className="space-y-4">
               {contactInfo.map((info, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="mt-1 text-blue-400">
+                <li key={index} className="flex items-center justify-center gap-4">
+                  <div className="text-blue-400 flex-shrink-0">
                     {info.icon}
                   </div>
-                  <span>{info.text}</span>
+                  {info.href ? (
+                    <a 
+                      href={info.href}
+                      className="text-gray-300 hover:text-blue-400 transition-colors duration-300 leading-relaxed"
+                    >
+                      {info.text}
+                    </a>
+                  ) : (
+                    <span className="text-gray-300 leading-relaxed">{info.text}</span>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#home" className="hover:text-blue-400 transition-colors">Home</a>
-              </li>
-              <li>
-                <a href="#education" className="hover:text-blue-400 transition-colors">Education</a>
-              </li>
-              <li>
-                <a href="#research" className="hover:text-blue-400 transition-colors">Research</a>
-              </li>
-              <li>
-                <a href="#publications" className="hover:text-blue-400 transition-colors">Publications</a>
-              </li>
-              <li>
-                <a href="#teaching" className="hover:text-blue-400 transition-colors">Teaching</a>
-              </li>
-              <li>
-                <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
-              </li>
-            </ul>
-          </div>
-
           {/* Social Links */}
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Connect With Me</h3>
-            <div className="flex space-x-4">
+          <div className="space-y-9 text-center w-full">
+            <h3 className="text-white text-xl font-semibold">Connect With Me</h3>
+            <div className="flex justify-center space-x-8">
               {socialLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                  className="flex flex-col items-center text-gray-400 hover:text-blue-400 transition-colors duration-300 "
                   title={link.name}
                 >
-                  {link.icon}
+                  <div className="p-2">
+                    {link.icon}
+                  </div>
+                  <span className="text-sm mt-1">{link.name}</span>
                 </a>
               ))}
             </div>
@@ -113,8 +99,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-sm">
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p className="text-sm text-gray-300">
             © {new Date().getFullYear()} Dr. Arun Yadav. All rights reserved.
           </p>
           <p className="text-sm mt-2 text-gray-500">
