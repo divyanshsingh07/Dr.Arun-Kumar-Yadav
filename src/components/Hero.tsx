@@ -95,24 +95,19 @@ const Hero = () => {
             <div className="border-t border-gray-300 dark:border-gray-700 mb-5" />
 
             {/* Professional Summary */}
-            
             <p className="text-sm sm:text-base ipad:text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I am currently serving as an <strong>Assistant Professor</strong> at <strong>VIT-AP University</strong> since <strong>May 2022</strong>, previously teaching at <strong>Manipal University Jaipur</strong> and <strong>Chandigarh University Mohali</strong>. I am a <strong>disciplined and collaborative academic</strong> with a passion for both teaching and research.
-              <br /><br />
-              I have taught a range of foundational and advanced mathematics courses, including
-              <strong> Calculus for Engineers</strong>, 
-              <strong> Discrete Mathematical Structures</strong>, 
-              <strong> Application of Differential and Difference Equations</strong>, 
-              <strong> Linear Algebra</strong>, and 
-              <strong> Applied Statistics</strong>. These subjects form the core of 
-              <strong> engineering and scientific education</strong>, and I aim to deliver them with 
-              <strong> clarity</strong> and 
-              <strong> real-world relevance</strong> to inspire 
-              <strong> student engagement</strong> and promote a deeper understanding of mathematical concepts.
-            </p>
+  I am an <strong>Assistant Professor of Mathematics</strong> at <strong>VIT-AP University</strong> since <strong>May 2022</strong>. Previously, I taught at <strong>Manipal University Jaipur</strong> and <strong>Chandigarh University Mohali</strong>.
+</p>
 
+<p className="text-sm sm:text-base ipad:text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+  I completed my <strong>Ph.D. in Mathematics</strong> from <strong>IIT (ISM) Dhanbad</strong>, with research on <strong>station-keeping control</strong> near <strong>Lagrangian points</strong> using <strong>linear control logic</strong> and <strong>port-Hamiltonian methods</strong>, aimed at enhancing <strong>spacecraft stability</strong>.
+</p>
+
+<p className="text-sm sm:text-base ipad:text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+  I have taught a variety of subjects including <strong>Engineering Mathematics</strong>, <strong>Calculus</strong>, <strong>Linear Algebra</strong>, <strong>Applied Statistics</strong>, <strong>Discrete Structures</strong>, and <strong>Application of Differential and Difference Equations</strong>. I focus on ensuring <strong>conceptual clarity</strong> through <strong>practical and real-world applications</strong> to enhance student learning.
+</p>
             {/* Awards and Scholarships */}
-            <h4 className="text-lg sm:text-xl ipad:text-2xl font-semibold text-gray-800 dark:text-white mb-2 underline decoration-1 underline-offset-2">
+            <h4 className="text-lg sm:text-xl ipad:text-2xl font-semibold text-gray-800 dark:text-white mb-2 underline">
   Awards & Scholarships
 </h4>
             <ul className="space-y-3 mb-6">
