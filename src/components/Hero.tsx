@@ -46,10 +46,10 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8 flex items-center">
       <div className="max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 ipad:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Photo and Social Links */}
           <div className="flex flex-col items-center">
-            <div className="w-[280px] sm:w-[320px] ipad:w-[360px] lg:w-[400px] h-[350px] sm:h-[400px] ipad:h-[450px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg">
+            <div className="w-[280px] sm:w-[320px] lg:w-[400px] h-[350px] sm:h-[400px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg">
               <img
                 src={profileImage}
                 alt="Dr. Arun Yadav"
