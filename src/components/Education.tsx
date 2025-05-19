@@ -38,7 +38,7 @@ const Education = () => {
       icon: <School className="w-6 h-6 text-blue-600 dark:text-blue-400" />
     },
     {
-      degree: "10th (Mathematics, Hindi, English, Social Science, Drawing)",
+      degree: "10th (Mathematics, Science, Hindi, English, Social Science, Drawing)",
       institution: "P. D. Pandey Inter College, Sonaisa, Faizabad",
       year: "2003 - 2005",
       details: "Percentage: 54.33%",
