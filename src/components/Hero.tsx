@@ -48,8 +48,8 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 ipad:grid-cols-2 gap-8 items-center">
           {/* Left Column - Photo and Social Links */}
-          <div className="flex flex-col items-center ipad:items-start">
-            <div className="w-[280px] sm:w-[320px] ipad:w-[360px] lg:w-[400px] h-[350px] sm:h-[400px] ipad:h-[450px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg mx-auto ipad:mx-0 ipad:ml-8 lg:ml-20">
+          <div className="flex flex-col items-center">
+            <div className="w-[280px] sm:w-[320px] ipad:w-[360px] lg:w-[400px] h-[350px] sm:h-[400px] ipad:h-[450px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg">
               <img
                 src={profileImage}
                 alt="Dr. Arun Yadav"
@@ -57,8 +57,8 @@ const Hero = () => {
               />
             </div>
             {/* Social Links and CV Download */}
-            <div className="flex flex-col items-center gap-4 mt-6 mx-48">
-              <div className="flex space-x-4">
+            <div className="flex flex-col items-center gap-4 mt-6">
+              <div className="flex justify-center space-x-4">
                 {socialLinks.map((link) => (
                   <a
                     key={link.name}
@@ -78,7 +78,7 @@ const Hero = () => {
               <a
                 href="/Resume.pdf"
                 download="Dr_Arun_Yadav_Resume.pdf"
-                className="inline-flex items-center gap-2 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-base ipad:text-lg"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-base ipad:text-lg"
               >
                 <Download className="w-5 h-5" />
                 <span>Download CV</span>
