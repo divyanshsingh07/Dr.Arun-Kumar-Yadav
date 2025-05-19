@@ -50,7 +50,7 @@ const Hero = () => {
           <div className="flex flex-col items-center ipad:items-start">
             <div className="w-[280px] sm:w-[320px] ipad:w-[360px] lg:w-[400px] h-[350px] sm:h-[400px] ipad:h-[450px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg mx-auto ipad:mx-0 ipad:ml-8 lg:ml-20">
               <img
-                src="https://vitap-backend.s3.ap-south-1.amazonaws.com/Dr_Arun_Kumar_Yadav_SAS_0882_cc6feb0927.avif"
+                src="src/assets/Arunyadav.png"
                 alt="Dr. Arun Yadav"
                 className="w-full h-full object-cover"
               />
